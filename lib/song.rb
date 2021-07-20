@@ -11,10 +11,9 @@ class Song
   end
   
   def Song.create
-    @@all << Song.new
-    @@all.each do |song|
-      puts song.name
-    end
+    song = self.new
+    song.save
+    song
     
   end
 
